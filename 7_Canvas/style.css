@@ -1,0 +1,51 @@
+ html,
+ body {
+     margin: 0;
+ }
+ 
+ body {
+     font-size: 16px;
+     position: relative;
+ }
+ 
+ h1 {
+     font-size: 2rem;
+     text-align: center;
+     font-family: 'Comic Sans MS', sans-serif;
+     transform: translate3d(-400px, 0, 0);
+     color: white;
+ }
+ 
+ .tools {
+     width: 100%;
+     max-width: 18px;
+     height: 100%;
+     position: absolute;
+     background: rgba(0, 0, 0, 0.3);
+     transition: 0.3s all ease;
+ }
+ 
+ .tools-opener {
+     width: 20px;
+     height: 100%;
+     background: rgba(0, 0, 0, 0.6);
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+ 
+ .tools-opener::before {
+     content: '';
+     position: absolute;
+     top: 43%;
+     width: 0;
+     height: 0;
+     border-top: 20px solid transparent;
+     border-bottom: 20px solid transparent;
+     border-left: 20px solid rgba(0, 0, 0, 0.4);
+     transform: rotateY(0deg);
+ }
+ 
+ .opened {
+     max-width: 300px;
+ }

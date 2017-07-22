@@ -1,0 +1,47 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.keys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    background: url('https://unsplash.it/1660/900') no-repeat 50% 50%;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    color: #fff;
+}
+
+.keys .key {
+    width: 100%;
+    max-width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 0, 0.3);
+    margin: 1%;
+}
+
+.key {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 6px solid rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.key div {
+    transition: all .3s ease;
+}
+
+.active {
+    color: fff;
+    transform: scale(1.1);
+}
